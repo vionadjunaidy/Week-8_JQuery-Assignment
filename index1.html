@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".answer").hide();
+            $(".question").click(function(){
+                $(this).next(".answer").slideToggle("slow");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>FAQ</h1>
+            <h3>How can we help you?</h3>
+        </div>
+        <div class="faq">
+            <div class="question">What products do you sell?
+                <i class='bx bx-chevron-down'></i>
+            </div>
+            <div class="answer">We provide a wide range of make-up products that can bring the most out of your beauty.</div>            
+        </div>
+        <div class="faq">
+            <div class="question">What makes your products unique?
+                <i class='bx bx-chevron-down'></i>
+            </div>
+            <div class="answer">Our makeup products are made with high-quality and cruelty-free ingredients. Our goal is to create vibrant and bautiful colors that cater to diverse skin tones. Additionally, our formulations prioritize skincare benefits to keep your skin healthy and radiant.</div>            
+        </div>
+        <div class="faq">
+            <div class="question">How can I get free samples?
+                <i class='bx bx-chevron-down'></i>
+            </div>
+            <div class="answer">You can get a free sample with every order with minimum of Rp150,000.</div>            
+        </div>
+        <div class="faq">
+            <div class="question">Are your products cruelty free?
+                <i class='bx bx-chevron-down'></i>
+            </div>
+            <div class="answer">Yes, all of our makeup products are cruelty-free. We do not test on animals, and we are committed to providing ethical and sustainable beauty solutions.</div>            
+        </div>
+        <div class="faq">
+            <div class="question">How do I choose the right shade for my skin tone?
+                <i class='bx bx-chevron-down'></i>
+            </div>
+            <div class="answer">Our website includes a shade guide to help you find the perfect match for your skin tone. You can also visit our stores for personalized assistance, and our beauty experts will be happy to assist you in finding the ideal shade for your complexion.</div>            
+        </div>
+    </div>
+</body>
+</html>
